@@ -14,7 +14,7 @@ management:
       shutdown:
          enabled: true
    server:
-      port: '11001'
+      port: '13001'
       address : localhost
 spring:
    jpa:
