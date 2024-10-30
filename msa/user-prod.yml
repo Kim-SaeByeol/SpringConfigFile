@@ -31,9 +31,9 @@ spring:
       open-in-view: 'false'
    datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      password: ${MARIADB-PASSWORD}
-      username: ${MARIADB-USER}
-      url: jdbc:mariadb://${MARIADB-IP}:${MARIADB-PORT}/myDB
+      password: 1234
+      username: poly
+      url: jdbc:mariadb://192.168.59.128:3306/myDB
    application:
       name: USER-SERVICE
    boot:
