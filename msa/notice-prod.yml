@@ -14,7 +14,8 @@ management:
       shutdown:
          enabled: true
    server:
-      port: ${NOTICE-SERVICE-ACTUATOR}
+      port: '11001'
+      address : localhost
 spring:
    jpa:
       generate-ddl: 'false'
@@ -39,7 +40,7 @@ spring:
    boot:
       admin:
          client: # Spring Boot Actuator Admin UI Server
-            url: http://${ADMIN-MANAGER-IP}:${ADMIN-MANAGER-PORT}
+            url: http://localhost:15000
 jwt:
    token:
       access:
@@ -49,8 +50,8 @@ eureka:
       fetch-registry: 'true'
       register-with-eureka: 'true'
       service-url:
-         defaultZone: http://${EUREKA-SERVICE-IP}:${EUREKA-SERVICE-PORT}/eureka
+         defaultZone: http://localhost:8761/eureka
 server:
-   port: ${NOTICE-SERVICE-PORT}
+   port: '12000'
 api:
-   gateway: ${API-GATEWAY-IP}:${API-GATEWAY-PORT}
+   gateway: localhost:11000
