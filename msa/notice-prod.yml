@@ -14,7 +14,7 @@ management:
       shutdown:
          enabled: true
    server:
-      port: '11001'
+      port: '12001'
       address : localhost
 spring:
    jpa:
@@ -53,5 +53,3 @@ eureka:
          defaultZone: http://localhost:8761/eureka
 server:
    port: '12000'
-api:
-   gateway: localhost:11000
