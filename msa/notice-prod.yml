@@ -15,7 +15,6 @@ management:
          enabled: true
    server:
       port: '12001'
-      address : localhost
 spring:
    jpa:
       generate-ddl: 'false'
